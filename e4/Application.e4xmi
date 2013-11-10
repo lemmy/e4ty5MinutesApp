@@ -32,7 +32,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_gBpFUEoZEeOnCdI5wSJ4QQ" elementId="PartStack@6e6869e3" containerData="10000">
-              <children xsi:type="basic:Part" xmi:id="_gXn8YEoZEeOnCdI5wSJ4QQ" label="6"/>
+              <children xsi:type="basic:Part" xmi:id="_gXn8YEoZEeOnCdI5wSJ4QQ" contributionURI="bundleclass://e4/e4.Help" label="Help"/>
             </children>
           </children>
         </children>
