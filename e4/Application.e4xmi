@@ -58,4 +58,5 @@
   <addons xmi:id="_TD7RuUoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_TD7RukoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
   <addons xmi:id="_zYTn8EotEeOfcb0wD83hkg" elementId="e4.addon.0" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
+  <addons xmi:id="_1mpt0Eo4EeOn5LAbCKbmVA" elementId="e4.addon.speakerAddon" contributionURI="bundleclass://e4/e4.SpeakerAddon"/>
 </application:Application>

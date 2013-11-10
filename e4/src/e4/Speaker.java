@@ -10,6 +10,10 @@ public class Speaker {
 	public Speaker() {
 		this.name = "Dummy Speaker";
 	}
+	
+	public Speaker(String aName) {
+		this.name = aName;
+	}
 
 	public String getName() {
 		return name;
