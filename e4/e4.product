@@ -9,6 +9,8 @@
    <launcherArgs>
       <programArgs>-clearPersistedState
 -console</programArgs>
+      <vmArgs>-Dfelix.fileinstall.dir=/tmp/plugins
+-Dfelix.fileinstall.poll=500</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -37,6 +39,7 @@
       <plugin id="org.apache.batik.util"/>
       <plugin id="org.apache.batik.util.gui"/>
       <plugin id="org.apache.commons.logging"/>
+      <plugin id="org.apache.felix.fileinstall"/>
       <plugin id="org.apache.felix.gogo.command"/>
       <plugin id="org.apache.felix.gogo.runtime"/>
       <plugin id="org.apache.felix.gogo.shell"/>
@@ -131,5 +134,8 @@
       <plugin id="org.w3c.dom.svg"/>
    </plugins>
 
+   <configurations>
+      <plugin id="org.apache.felix.fileinstall" autoStart="true" startLevel="0" />
+   </configurations>
 
 </product>
