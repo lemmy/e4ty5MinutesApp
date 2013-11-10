@@ -14,7 +14,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_XVyIcEoZEeOnCdI5wSJ4QQ" elementId="PartStack@26b0e731" containerData="10000" selectedElement="_YvwzIEoZEeOnCdI5wSJ4QQ">
-              <children xsi:type="basic:Part" xmi:id="_YvwzIEoZEeOnCdI5wSJ4QQ" label="Second part"/>
+              <children xsi:type="basic:Part" xmi:id="_YvwzIEoZEeOnCdI5wSJ4QQ" contributionURI="bundleclass://e4/e4.DependencyInjection" label="Dependency Injection"/>
             </children>
           </children>
           <children xsi:type="basic:PartSashContainer" xmi:id="_cvA28EoZEeOnCdI5wSJ4QQ" containerData="10000" selectedElement="_e9bPQEoZEeOnCdI5wSJ4QQ" horizontal="true">
@@ -59,4 +59,5 @@
   <addons xmi:id="_TD7RukoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
   <addons xmi:id="_zYTn8EotEeOfcb0wD83hkg" elementId="e4.addon.0" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon"/>
   <addons xmi:id="_1mpt0Eo4EeOn5LAbCKbmVA" elementId="e4.addon.speakerAddon" contributionURI="bundleclass://e4/e4.SpeakerAddon"/>
+  <addons xmi:id="_FLqB4Eo7EeOn5LAbCKbmVA" elementId="e4.ImageAddon" contributionURI="bundleclass://e4/e4.ImageAddon"/>
 </application:Application>
