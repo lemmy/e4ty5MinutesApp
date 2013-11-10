@@ -22,7 +22,7 @@
               <children xsi:type="basic:Part" xmi:id="_iQs94EoZEeOnCdI5wSJ4QQ" contributionURI="bundleclass://e4/e4.OSGi" label="OSGi modularity"/>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_fX3vkEoZEeOnCdI5wSJ4QQ" elementId="PartStack@131e0544" containerData="10000">
-              <children xsi:type="basic:Part" xmi:id="_htuzsEoZEeOnCdI5wSJ4QQ" label="4"/>
+              <children xsi:type="basic:Part" xmi:id="_htuzsEoZEeOnCdI5wSJ4QQ" contributionURI="bundleclass://e4/e4.Styling" label="Styling"/>
             </children>
           </children>
           <children xsi:type="basic:PartSashContainer" xmi:id="_dQi2sEoZEeOnCdI5wSJ4QQ" toBeRendered="false" containerData="10000" selectedElement="_frUQAEoZEeOnCdI5wSJ4QQ" horizontal="true">
