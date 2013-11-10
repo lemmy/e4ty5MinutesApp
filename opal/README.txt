@@ -1,0 +1,2 @@
+- Created via Eclipse with Import > From existing Jar
+- Copied own css*.png to images/ folder because opal uses its own classloader to load resources (this does not work in an OSGi context)

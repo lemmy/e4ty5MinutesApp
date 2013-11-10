@@ -1,0 +1,2390 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The e4ty5 minutes app
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+e4 - Neuer Wein in alten Schläuchen
+\end_layout
+
+\begin_layout Itemize
+Why Eclipse e4? (the Egg Laying Woolmilkpig) 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://industrial-tsi-wim.blogspot.de/2012/10/why-eclipse-e4-egg-laying-woolmilkpi
+g.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Rapid development with Eclipse e4
+\end_layout
+
+\begin_layout Itemize
+The road to e4 with e4
+\end_layout
+
+\begin_layout Itemize
+Going meta on e4
+\end_layout
+
+\begin_layout Itemize
+e4 ⇒ e4
+\end_layout
+
+\begin_layout Itemize
+Discover e4 with e4
+\end_layout
+
+\begin_layout Itemize
+The 45 minutes app
+\end_layout
+
+\begin_layout Itemize
+The e45 minutes app
+\end_layout
+
+\begin_layout Itemize
+The e4ty5 minutes app
+\end_layout
+
+\begin_layout Itemize
+e44e4
+\end_layout
+
+\begin_layout Itemize
+e4δe4 
+\end_layout
+
+\begin_layout Itemize
+e4 for e4
+\end_layout
+
+\begin_layout Itemize
+e4toe4
+\end_layout
+
+\begin_layout Itemize
+e42e4
+\end_layout
+
+\begin_layout Itemize
+eFo(u)r e4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Markus A.
+ Kuppe
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+45 Minutes
+\end_layout
+
+\begin_layout Itemize
+Audience new to Eclipse RCP and e4 in particular
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Enumerate
+Motivation
+\end_layout
+
+\begin_layout Enumerate
+What's hot?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Application model/e4 workbench model
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Based on well known and mature EMF
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+dynamics of application model
+\end_layout
+
+\begin_layout Enumerate
+App model present at runtime
+\end_layout
+
+\begin_layout Enumerate
+OSGi
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+modularity
+\end_layout
+
+\begin_layout Enumerate
+divide & conquer
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Dependency injection
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Hollywood principle 
+\begin_inset Quotes eld
+\end_inset
+
+don't call us, we call you
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Just POJOs (no viewpart)
+\end_layout
+
+\begin_layout Enumerate
+dynamics
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Behavior annotations
+\end_layout
+
+\begin_layout Enumerate
+OSGi service registry combined with IEclipseContext
+\end_layout
+
+\begin_layout Enumerate
+Styling/Renderer
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+JavaFX, Swing of Vaaclipse
+\end_layout
+
+\begin_layout Enumerate
+OpenGL Bling L33t?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Single sourcing
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Lifecycle and EventBus
+\end_layout
+
+\begin_layout Enumerate
+Services (Are services really hto and new?)
+\end_layout
+
+\begin_layout Enumerate
+Extensibility of the application model
+\end_layout
+
+\begin_layout Enumerate
+What's better compared to 3x?
+\end_layout
+
+\begin_layout Enumerate
+FOSS contributions are fun
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Advertise contributions
+\end_layout
+
+\begin_layout Enumerate
+Summary
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+How to get rid of dreaded restart cycles?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Fortschitt in der Präsentation via Progress Bar
+\end_layout
+
+\begin_layout Itemize
+context explorer & event spy to demo introspection
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ALT-SHIFT-F1 plugin-spy
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Add toolbar with handlers for individual chapters?
+\end_layout
+
+\begin_layout Itemize
+OSGi modularity: Could place folder for fileinstall on e.g.
+ dropbox (or some other public place for that matter) and allow attendees
+ to deploy their own impl
+\end_layout
+
+\begin_layout Itemize
+Dependency injection: Show POJO awesomeness by re-using a part impl someplace
+ else, e.g.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dialog
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Welcome Slides via Lifecycle hook on EventBus
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+[WorkbenchLauncher] Suggestion for an E4 Splash Screen Service 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://bugs.eclipse.org/382224
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Use Salvo to embed the nntp newsgroups
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+The Eclipse Rich Client Platform (RCP) in its fourth incantation/incarnation
+ brings rapid development of desktop applications to devs and a native look
+ & feel to its users.
+ All based on a decade of experience.
+\begin_inset Newline newline
+\end_inset
+
+In this talk, Markus will proof how fast and efficient an Eclipse RCP applicatio
+n can be build from the grounds up.
+ He starts with just a bare window and explores all significant aspects*
+ of the platform on his path to the final application.
+\begin_inset Newline newline
+\end_inset
+
+*As part of our efforts to address the serious issue of providing you with
+ access to quality instructions and training, this talk will cover areas
+ including, but not limited to Dependency Injection (DI), Application model
+ and its dynamics, OSGi modularity and services, Eventing and Styling.
+\end_layout
+
+\begin_layout Section
+Basics [Build yet another presentation application aka powerpoint sucks]
+\end_layout
+
+\begin_layout Enumerate
+Start Eclipse IDE
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Almost everything needed is part of the standard IDE download
+\end_layout
+
+\begin_layout Enumerate
+Close deaded error log
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Create new e4 application (requires e4tools to be installed)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Name it 'e4'
+\end_layout
+
+\begin_layout Enumerate
+Do not generates 'sample content'
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Start product and show empty window (Not much to show yet)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain product file
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Add 'splash.bmp' into e4 project and add 'e4' plug-in to .product > splash
+ > Location
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Splash from existing splash.bmp to show who I am :-)
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Application model
+\end_layout
+
+\begin_layout Subsection
+Static [A presentation usually needs slides]
+\end_layout
+
+\begin_layout Enumerate
+Add a part to host an outline
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Explain application model generally
+\end_layout
+
+\begin_layout Enumerate
+Create just a part beneath window
+\end_layout
+
+\begin_layout Enumerate
+Have the wizard generate @PostConstruct
+\end_layout
+
+\begin_layout Enumerate
+Do not show the code
+\end_layout
+
+\begin_layout Enumerate
+Open WindowBuilder and showcase
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Group 
+\begin_inset Quotes eld
+\end_inset
+
+Outline
+\end_layout
+
+\begin_layout Enumerate
+GridLayout into Group
+\end_layout
+
+\begin_layout Enumerate
+label with chapter heading
+\end_layout
+
+\begin_layout Enumerate
+Checkbox button for each item
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Select done items
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Tags on model elements
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Add 
+\begin_inset Quotes eld
+\end_inset
+
+shellMaximized
+\begin_inset Quotes erd
+\end_inset
+
+ to (trimmed window)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Dynamics of application model
+\end_layout
+
+\begin_layout Subsubsection
+Deploy live editor
+\end_layout
+
+\begin_layout Itemize
+Add 'org.elipse.e4.tools.emf.liveeditor' and its requirements
+\end_layout
+
+\begin_layout Itemize
+Add a BindingTable for 
+\begin_inset Quotes eld
+\end_inset
+
+Dialogs and Windows
+\begin_inset Quotes erd
+\end_inset
+
+ to static application model (This is required by the live editor's ALT-SHIFT-F9
+ shortcut)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://bugs.eclipse.org/421259
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+(Could show that the same live editor is also available for the IDE)
+\end_layout
+
+\begin_layout Subsubsection
+Change the model at runtime (will be cleaned afterwards due to -clearPersistedSt
+ate)
+\end_layout
+
+\begin_layout Itemize
+Create a PartStack
+\end_layout
+
+\begin_layout Itemize
+Create another Part
+\end_layout
+
+\begin_layout Itemize
+Move existing Part into newly created PartStack
+\end_layout
+
+\begin_layout Itemize
+DO NOT:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Activating main menu (does not get rendered
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Toy with 
+\begin_inset Quotes eld
+\end_inset
+
+-clearPersistedState
+\begin_inset Quotes erd
+\end_inset
+
+ to show that delta changes can be applied
+\end_layout
+
+\begin_layout Itemize
+Extend the application model at runtime, copy the current state from the
+ liveeditor and paste it back into the application.e4xmi file in the IDE
+\end_layout
+
+\begin_layout Itemize
+Build tile layout based on sashes
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Need six tiles?!
+\end_layout
+
+\begin_layout Itemize
+Set unused 
+\begin_inset Quotes eld
+\end_inset
+
+slides
+\begin_inset Quotes erd
+\end_inset
+
+ to invisible
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Modularity
+\end_layout
+
+\begin_layout Paragraph
+Minimize/Maximize [Um das aktuelle Chapter im Vortrag volle Aufmerksamkeit
+ zu geben]
+\end_layout
+
+\begin_layout Itemize
+Add bundle to .product (to get minimizing and maximizing of parts)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+org.eclipse.e4.ui.workbench.addons.swt
+\end_layout
+
+\begin_layout Itemize
+No need to add a model addon explicitly, because model processor 'org.eclipse.e4.ui.
+workbench.addons.swt.MinMaxProcessor' does it programmatically
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+Drag and drop [Um Chapter innerhalb der Präsentation zu verschieben und
+ die Outline nachträglich zu verändern ala: 
+\begin_inset Quotes eld
+\end_inset
+
+Ich bin mir über die finale Ordnung noch nicht abschließend sicher
+\begin_inset Quotes erd
+\end_inset
+
+]
+\end_layout
+
+\begin_layout Itemize
+Add model addon to application model
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dnda
+ddon.DnDAddon
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Dependency Injection
+\end_layout
+
+\begin_layout Subsection
+Simple DI (Speaker) [A talk has a speaker that is potentially different
+ each time talk is given]
+\end_layout
+
+\begin_layout Itemize
+Add Speaker type to @PostConstruct of Outline part and set speakers name
+ in outline
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+@Creatable to get a new Speaker instance in the context
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+But only with CTor with 
+\begin_inset Quotes eld
+\end_inset
+
+Dummy name
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Use previously introduced model addon to add a specialized Speaker instance
+ into IEclipseContext
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Can show opcoach context explorer
+\end_layout
+
+\begin_layout Subsection
+Advanced DI & model services [Create talk Outline dynamically based on slides
+ aka latex index list]
+\end_layout
+
+\begin_layout Subsubsection
+Inject EModelService and MApplication into Outline to find all MParts to
+ build the outline dynamically
+\end_layout
+
+\begin_layout Itemize
+Use unchecked buttons for each of the items
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+@PostConstruct 	
+\end_layout
+
+\begin_layout Plain Layout
+
+public void postConstruct(Composite parent, Speaker s, EModelService ems,
+ MApplication app) { 	
+\end_layout
+
+\begin_layout Plain Layout
+
+	Group grpOutline = new Group(parent, SWT.NONE); 		
+\end_layout
+
+\begin_layout Plain Layout
+
+	grpOutline.setText("Outline " + s.getName()); 	
+\end_layout
+
+\begin_layout Plain Layout
+
+	grpOutline.setLayout(new GridLayout(1, false)); 	
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	List<MPart> findElements = ems.findElements(app, null, MPart.class, null);
+\end_layout
+
+\begin_layout Plain Layout
+
+	for (MPart mPart : findElements) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+		Label lblChapter = new Label(grpOutline, SWT.NONE);
+\end_layout
+
+\begin_layout Plain Layout
+
+		Button btnproduct = new Button(grpOutline, SWT.CHECK); 			
+\end_layout
+
+\begin_layout Plain Layout
+
+		btnproduct.setSelection(false);
+\end_layout
+
+\begin_layout Plain Layout
+
+		// Could be a part without a label set 		
+\end_layout
+
+\begin_layout Plain Layout
+
+		btnproduct.setText(mPart.getLabel() == null ? "" : mPart.getLabel()); 
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\end_layout
+
+\begin_layout Plain Layout
+
+		// Just a horizontal line		
+\end_layout
+
+\begin_layout Plain Layout
+
+		Label label = new Label(grpOutline, SWT.SEPARATOR | SWT.HORIZONTAL); 		
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    // [...]
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Non-typed based keys aka @Named(
+\begin_inset Quotes eld
+\end_inset
+
+...
+\begin_inset Quotes erd
+\end_inset
+
+) [Add DI Image to DI_ROXXS slide]
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package e4;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.net.URL;
+\end_layout
+
+\begin_layout Plain Layout
+
+import javax.inject.Inject;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.e4.core.contexts.IEclipseContext;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.jface.resource.ImageDescriptor;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.graphics.Image;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.FrameworkUtil;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class ImageLoader { 	
+\end_layout
+
+\begin_layout Plain Layout
+
+	@Inject
+\end_layout
+
+\begin_layout Plain Layout
+
+	private void loadImage(IEclipseContext ctx) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		URL entry = FrameworkUtil.getBundle(getClass()).getEntry("di.png");
+\end_layout
+
+\begin_layout Plain Layout
+
+		ImageDescriptor imageDescr = ImageDescriptor.createFromURL(entry);
+\end_layout
+
+\begin_layout Plain Layout
+
+		Image image = imageDescr.createImage();
+\end_layout
+
+\begin_layout Plain Layout
+
+		ctx.set("DI_ROXXS", image);
+\end_layout
+
+\begin_layout Plain Layout
+
+	} 
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+@PostConstruct
+\end_layout
+
+\begin_layout Plain Layout
+
+public void postConstruct(Composite parent, @Named("DI_ROXXS") Image image)
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+	Label label = new Label(parent, SWT.BORDER);
+\end_layout
+
+\begin_layout Plain Layout
+
+	label.setImage(image); 	
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+OSGi
+\end_layout
+
+\begin_layout Subsection
+Modularity [Presentation app build so far is just the outter shell, where
+ speakers should be able to deploy content into (adapt the presentation
+ to the audience easily, e.g.
+ set count of audience/name of company/name of event)]
+\end_layout
+
+\begin_layout Itemize
+Add VM args to .product
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+-console
+\end_layout
+
+\begin_layout Itemize
+(-consoleLog)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Add bundles to product dependencies
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+org.eclipse.equinox.console
+\end_layout
+
+\begin_layout Itemize
+org.apache.felix.gogo.command
+\end_layout
+
+\begin_layout Itemize
+org.apache.felix.gogo.runtime
+\end_layout
+
+\begin_layout Itemize
+org.apache.felix.gogo.shell
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+install file:///tmp/plugins/MyOSGiContent_1.0.0.1.jar
+\end_layout
+
+\begin_layout Plain Layout
+
+lb /*list bundles*/
+\end_layout
+
+\begin_layout Plain Layout
+
+b $bundleId /*display details of bundle with bundleId*/
+\end_layout
+
+\begin_layout Plain Layout
+
+install file:///tmp/plugins/MyOSGiContent_1.0.0.2.jar
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Versioning [Restart bundles automatically via felix fileinstall]
+\end_layout
+
+\begin_layout Itemize
+Download from http://felix.apache.org/downloads.cgi and put .jar into dropins/
+ folder of Eclipse IDE
+\end_layout
+
+\begin_layout Itemize
+http://felix.apache.org/site/apache-felix-file-install.html
+\end_layout
+
+\begin_layout Itemize
+Add bundle to product dependencies
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+org.apache.felix.fileinstall
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Add VM args to .product
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+-Dfelix.fileinstall.dir=/tmp/plugins
+\end_layout
+
+\begin_layout Itemize
+-Dfelix.fileinstall.poll=500
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Create new bundle with higher version number and deploy in application via
+ dropins
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Use 
+\begin_inset Quotes eld
+\end_inset
+
+refresh $bundleId
+\begin_inset Quotes erd
+\end_inset
+
+ to rewire bundles if two versions started, one goes away and the consumer
+ doesn't get re-wired
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package content.service;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.Constants; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.FrameworkUtil;
+\end_layout
+
+\begin_layout Plain Layout
+
+import e4.ContentService;
+\end_layout
+
+\begin_layout Plain Layout
+
+public class MyContentServiceImpl implements ContentService { 	
+\end_layout
+
+\begin_layout Plain Layout
+
+   public String getTitle() { 		
+\end_layout
+
+\begin_layout Plain Layout
+
+      String version = FrameworkUtil.getBundle(getClass()).getHeaders()
+\end_layout
+
+\begin_layout Plain Layout
+
+				.get(Constants.BUNDLE_VERSION); 		
+\end_layout
+
+\begin_layout Plain Layout
+
+      return "Some new content from " + version + ", awesome!";
+\end_layout
+
+\begin_layout Plain Layout
+
+   }
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package content.service;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.Bundle;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.Constants;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.FrameworkUtil;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.ServiceReference;
+\end_layout
+
+\begin_layout Plain Layout
+
+import e4.ContentService;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class MyContentServiceImpl implements ContentService {
+\end_layout
+
+\begin_layout Plain Layout
+
+	public String getTitle() {
+\end_layout
+
+\begin_layout Plain Layout
+
+		final Bundle bundle = FrameworkUtil.getBundle(getClass());
+\end_layout
+
+\begin_layout Plain Layout
+
+		// Version
+\end_layout
+
+\begin_layout Plain Layout
+
+		String version = bundle.getHeaders()
+\end_layout
+
+\begin_layout Plain Layout
+
+				.get(Constants.BUNDLE_VERSION);
+\end_layout
+
+\begin_layout Plain Layout
+
+		String msg = "Some new content from " + version + ", awesome!"; 	
+\end_layout
+
+\begin_layout Plain Layout
+
+		// Using services
+\end_layout
+
+\begin_layout Plain Layout
+
+		ServiceReference<?>[] registeredServices = bundle.getRegisteredServices();
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (registeredServices != null && registeredServices.length > 0) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			Bundle[] usingBundles = registeredServices[0].getUsingBundles();
+\end_layout
+
+\begin_layout Plain Layout
+
+			msg += "
+\backslash
+n Our service is used by: ";
+\end_layout
+
+\begin_layout Plain Layout
+
+			for (Bundle aBundle : usingBundles) {
+\end_layout
+
+\begin_layout Plain Layout
+
+				 msg += "
+\backslash
+n" + aBundle.getSymbolicName();
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+		} 	
+\end_layout
+
+\begin_layout Plain Layout
+
+		return msg;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Refactor ContentService into own 'api' bundle
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Move class, export its package and add to .product
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO!!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Services Remoting [Steal some (remote) content and embed it into my presentation
+ (but don't copy and paste)]
+\end_layout
+
+\begin_layout Itemize
+Service can easily be remoted
+\end_layout
+
+\begin_layout Itemize
+Use IChatMessage bot running on build.vogella.com
+\end_layout
+
+\begin_layout Section
+Eventing [Show progress/current part of presentation]
+\end_layout
+
+\begin_layout Itemize
+PREREQUISITE: Parts have to correctly set focus (no impl of parts means
+ one has to click on headers)
+\end_layout
+
+\begin_layout Itemize
+Use events send out on MPart activation to switch the button state in the
+ Outline part
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+private final Map<MPart, Button> buttons = new HashMap<>(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@Inject
+\end_layout
+
+\begin_layout Plain Layout
+
+@Optional
+\end_layout
+
+\begin_layout Plain Layout
+
+private void updateButtonState(@UIEventTopic(UIEvents.UILifeCycle.ACTIVATE)
+ org.osgi.service.event.Event o) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	Object property = o.getProperty(UIEvents.EventTags.ELEMENT);
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (buttons.containsKey(property)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			Button button = buttons.get(property);
+\end_layout
+
+\begin_layout Plain Layout
+
+			button.setSelection(!button.getSelection()); // Never flip but set to true
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Styling & Renderer
+\end_layout
+
+\begin_layout Subsection
+CSS declarative styling 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pimp the colors of my presentation to get more attention and larger headings
+ (part labels on part stack)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Use hippie style (could use dark as well)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Just move default.css to css folder
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Show other alternative stylings
+\end_layout
+
+\begin_layout Itemize
+Opal's image selector to show various different stylings
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+download 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+http://opal.eclipselabs.org.codespot.com/files/opal-0.9.5.2.jar
+\end_layout
+
+\begin_layout Plain Layout
+source via 
+\begin_inset Quotes eld
+\end_inset
+
+hg clone https://code.google.com/a/eclipselabs.org/p/opal/ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+new>plugin from jar>external
+\end_layout
+
+\begin_layout Itemize
+Add SWT to bundle dependencies
+\end_layout
+
+\begin_layout Itemize
+Copy css*.png to images/ folder of opal bundle
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package e4;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.util.LinkedList; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.util.List;
+\end_layout
+
+\begin_layout Plain Layout
+
+import javax.annotation.PostConstruct;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.SWT; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.layout.FillLayout; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.widgets.Composite; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.mihalis.opal.imageSelector.ISItem; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.mihalis.opal.imageSelector.ImageSelector;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class Styling {
+\end_layout
+
+\begin_layout Plain Layout
+
+	@PostConstruct 	
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void postConstruct(Composite parent) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		parent.setLayout(new FillLayout());
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        final List<ISItem> items = new LinkedList<ISItem>();
+\end_layout
+
+\begin_layout Plain Layout
+
+        items.add(new ISItem("Grey", "images/css1.png"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        items.add(new ISItem("Black", "images/css2.png"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        items.add(new ISItem("Gradient", "images/css3.png"));
+\end_layout
+
+\begin_layout Plain Layout
+
+        items.add(new ISItem("Blue", "images/css4.png"));
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        final ImageSelector imageSelector = new ImageSelector(parent, SWT.NONE);
+\end_layout
+
+\begin_layout Plain Layout
+
+        imageSelector.setItems(items);
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Renderer [Where to get further help and find e4 getting started documentation?]
+\end_layout
+
+\begin_layout Subsubsection
+Eclipse Forums
+\end_layout
+
+\begin_layout Itemize
+Use parts that embed an e.g Browser page each
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Use tagged part to render the final slide inside a browser (location is
+ vogella.com)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Use URL as Tag and try/catch to create URL from it inside Part renderer
+\end_layout
+
+\begin_layout Itemize
+http://www.eclipse.org/forums/
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Implement MyRendererFactory
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+<propert>
+\end_layout
+
+\begin_layout Plain Layout
+
+      name="rendererFactoryUri"
+\end_layout
+
+\begin_layout Plain Layout
+
+      value="bundleclass://e4/e4.MyRendererFactory">
+\end_layout
+
+\begin_layout Plain Layout
+
+</property> 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Add require-bundles
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+org.eclipse.e4.ui.workbench.renderers.swt
+\end_layout
+
+\begin_layout Itemize
+org.eclipse.e4.ui.workbench.swt
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package e4;
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.net.MalformedURLException;
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.net.URL;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.e4.ui.model.application.ui.MUIElement;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.SWT;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.browser.Browser;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.layout.GridData;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.layout.GridLayout;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.widgets.Composite;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class BrowserRenderer extends SWTPartRenderer {
+\end_layout
+
+\begin_layout Plain Layout
+
+	@Override
+\end_layout
+
+\begin_layout Plain Layout
+
+	public Object createWidget(MUIElement element, Object parent) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		Composite mapComposite = new Composite((Composite) parent, SWT.NONE);
+\end_layout
+
+\begin_layout Plain Layout
+
+		String tag = element.getTags().get(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+		try {
+\end_layout
+
+\begin_layout Plain Layout
+
+			URL url = new URL(tag);
+\end_layout
+
+\begin_layout Plain Layout
+
+			mapComposite.setLayout(new GridLayout(1, false));
+\end_layout
+
+\begin_layout Plain Layout
+
+			Browser browser = new Browser(mapComposite, SWT.NONE);
+\end_layout
+
+\begin_layout Plain Layout
+
+			browser.setUrl(url.toExternalForm());
+\end_layout
+
+\begin_layout Plain Layout
+
+			browser.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true, true));
+\end_layout
+
+\begin_layout Plain Layout
+
+			return mapComposite;
+\end_layout
+
+\begin_layout Plain Layout
+
+		} catch (MalformedURLException doesNotHappen) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			doesNotHappen.printStackTrace();
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		return mapComposite;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package e4;
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.net.MalformedURLException;
+\end_layout
+
+\begin_layout Plain Layout
+
+import java.net.URL;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.e4.ui.internal.workbench.swt.AbstractPartRenderer;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.e4.ui.model.application.ui.MUIElement;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.e4.ui.model.application.ui.basic.MPart;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.e4.ui.workbench.renderers.swt.WorkbenchRendererFactory;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@SuppressWarnings("restriction")
+\end_layout
+
+\begin_layout Plain Layout
+
+public class MyRendererFactory extends WorkbenchRendererFactory {
+\end_layout
+
+\begin_layout Plain Layout
+
+	@Override
+\end_layout
+
+\begin_layout Plain Layout
+
+	public AbstractPartRenderer getRenderer(MUIElement uiElement, Object parent)
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+		if (uiElement instanceof MPart) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			MPart part = (MPart) uiElement;
+\end_layout
+
+\begin_layout Plain Layout
+
+			for (String tag : part.getTags()) { // could use persistent state instead
+ of tag to identify part
+\end_layout
+
+\begin_layout Plain Layout
+
+				if (tag.startsWith("http://")) {
+\end_layout
+
+\begin_layout Plain Layout
+
+					try {
+\end_layout
+
+\begin_layout Plain Layout
+
+						new URL(tag);
+\end_layout
+
+\begin_layout Plain Layout
+
+						BrowserRenderer br = new BrowserRenderer();
+\end_layout
+
+\begin_layout Plain Layout
+
+						initRenderer(br);
+\end_layout
+
+\begin_layout Plain Layout
+
+						return br;
+\end_layout
+
+\begin_layout Plain Layout
+
+					} catch (MalformedURLException doesNotHappen) {
+\end_layout
+
+\begin_layout Plain Layout
+
+						doesNotHappen.printStackTrace();
+\end_layout
+
+\begin_layout Plain Layout
+
+					}
+\end_layout
+
+\begin_layout Plain Layout
+
+				}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		return super.getRenderer(uiElement, parent);
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Mozilla xulrunner instead of webkit (if webkit causes crashes)
+\end_layout
+
+\begin_layout Itemize
+-Dorg.eclipse.swt.browser.DefaultType=mozilla
+\end_layout
+
+\begin_layout Itemize
+https://bugs.eclipse.org/384463 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+org.eclipse.swt.SWTError: No more handles [Could not detect registered XULRunner
+ to use] 	at org.eclipse.swt.SWT.error(SWT.java:4445) 	at org.eclipse.swt.browser.Mozilla.
+create(Mozilla.java:699) 	at org.eclipse.swt.browser.Browser.<init>(Browser.java:99)
+ 	at e4.BrowserRenderer.createWidget(BrowserRenderer.java:24) 	at org.eclipse.e4.ui.int
+ernal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:949)
+ 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRend
+eringEngine.java:633) 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.sa
+feCreateGui(PartRenderingEngine.java:735) 	at org.eclipse.e4.ui.internal.workbench.swt.P
+artRenderingEngine.access$2(PartRenderingEngine.java:706) 	at org.eclipse.e4.ui.intern
+al.workbench.swt.PartRenderingEngine$7.run(PartRenderingEngine.java:700) 	at
+ org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) 	at org.eclipse.e4.ui.interna
+l.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:685) 	at
+ org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1137)
+ 	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$1.handleEvent(LazyStack
+Renderer.java:65) 	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIE
+ventHandler.java:41) 	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.jav
+a:185) 	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4514) 	at org.eclipse.e
+4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:206) 	at
+ org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.jav
+a:38) 	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHand
+lerWrapper.java:197) 	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatc
+hEvent(EventHandlerTracker.java:197) 	at org.eclipse.equinox.internal.event.EventHandl
+erTracker.dispatchEvent(EventHandlerTracker.java:1) 	at org.eclipse.osgi.framework.eve
+ntmgr.EventManager.dispatchEvent(EventManager.java:230) 	at org.eclipse.osgi.framework.
+eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148) 	at
+ org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:13
+5) 	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:
+78) 	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java
+:39) 	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:80)
+ 	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublish
+er.java:58) 	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifi
+erImpl.java:374) 	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setS
+electedElement(ElementContainerImpl.java:171) 	at org.eclipse.e4.ui.workbench.renderer
+s.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:101) 	at org.eclipse.e4.ui.in
+ternal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:649)
+ 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRend
+eringEngine.java:735) 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.ac
+cess$2(PartRenderingEngine.java:706) 	at org.eclipse.e4.ui.internal.workbench.swt.PartRe
+nderingEngine$7.run(PartRenderingEngine.java:700) 	at org.eclipse.core.runtime.SafeRun
+ner.run(SafeRunner.java:42) 	at [...]
+\end_layout
+
+\begin_layout Plain Layout
+org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngi
+ne.java:685) 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartR
+enderingEngine.java:1042) 	at org.eclipse.core.databinding.observable.Realm.runWithDefa
+ult(Realm.java:332) 	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(
+PartRenderingEngine.java:997) 	at org.eclipse.e4.ui.internal.workbench.E4Workbench.creat
+eAndRunUI(E4Workbench.java:144) 	at org.eclipse.e4.ui.internal.workbench.swt.E4Applicati
+on.start(E4Application.java:163) 	at org.eclipse.equinox.internal.app.EclipseAppHandle.r
+un(EclipseAppHandle.java:196) 	at org.eclipse.core.runtime.internal.adaptor.EclipseAppL
+auncher.runApplication(EclipseAppLauncher.java:109) 	at org.eclipse.core.runtime.inter
+nal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:80) 	at org.eclipse.core.r
+untime.adaptor.EclipseStarter.run(EclipseStarter.java:372) 	at org.eclipse.core.runtime.
+adaptor.EclipseStarter.run(EclipseStarter.java:226) 	at sun.reflect.NativeMethodAcces
+sorImpl.invoke0(Native Method) 	at sun.reflect.NativeMethodAccessorImpl.invoke(Nativ
+eMethodAccessorImpl.java:57) 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Del
+egatingMethodAccessorImpl.java:43) 	at java.lang.reflect.Method.invoke(Method.java:606
+) 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:636) 	at org.eclipse.e
+quinox.launcher.Main.basicRun(Main.java:591) 	at org.eclipse.equinox.launcher.Main.run(Ma
+in.java:1450) 	at org.eclipse.equinox.launcher.Main.main(Main.java:1426) 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Download platform specific runtime from http://ftp.mozilla.org/pub/mozilla.org/xulr
+unner/releases/10.0.4esr/runtimes/ and extract to /tmp
+\end_layout
+
+\begin_layout Itemize
+-Dorg.eclipse.swt.browser.XULRunnerPath=/tmp/xulrunner 
+\end_layout
+
+\begin_layout Subsubsection
+Vogella trainings
+\end_layout
+
+\begin_layout Itemize
+Add additional MPart in browser stack
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+http://localhost/training
+\end_layout
+
+\begin_layout Itemize
+(or http://training.vogella.com/index.html)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Nebula (GeoMap) [Where is vogella GmbH located]
+\end_layout
+
+\begin_layout Itemize
+Incubation geomap 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://download.eclipse.org/technology/nebula/incubation/snapshot
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shows installation of custom widgets too
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+package e4.geomap;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import javax.annotation.PostConstruct;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.nebula.widgets.geomap.GeoMapBrowser;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.SWT; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.layout.FillLayout; 
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.eclipse.swt.widgets.Composite;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class MyGeoMap {
+\end_layout
+
+\begin_layout Plain Layout
+
+	@PostConstruct 	
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void main(Composite parent) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		parent.setLayout(new FillLayout()); 		
+\end_layout
+
+\begin_layout Plain Layout
+
+		new GeoMapBrowser(parent, SWT.NONE); 
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Summary
+\end_layout
+
+\begin_layout Itemize
+Egg laying wool milk pig 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://1.bp.blogspot.com/_UTRuDcXBvvg/TNxSZY3KOYI/AAAAAAAAAKY/FE58Q8T5DRM/s1600/eie
+r-legende-wollmilchsau1.jpg
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Thanks for attention
+\end_layout
+
+\begin_layout Itemize
+Clap-o-meter based on Nebula Tank widget and Wim's hook up to notebook's
+ microphone 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://github.com/EclipseNebula/ECE2013/blob/master/com.remainsoftware.ece2013.nebu
+la/src/com/remainsoftware/ece2013/nebula/oscilloscope/Shared.java
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Contribute
+\end_layout
+
+\begin_layout Itemize
+Git Perspective > Repo > Remotes > 'origin' > Gerrit Configuration
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ssh://mkuppe@git.eclipse.org:29418/e4/org.eclipse.e4.tools
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+remove 'gitroot' from url
+\end_layout
+
+\begin_layout Itemize
+user: mkuppe
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+refs/for/master
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Commit with 'bugs.eclipse.org@lemmster.de' for all 3 email address (commiter,
+ author, signed-off)
+\end_layout
+
+\end_body
+\end_document
