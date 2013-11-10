@@ -15,6 +15,10 @@
                name="appName"
                value="e4">
          </property>
+         <property
+               name="rendererFactoryUri"
+               value="bundleclass://e4/e4.MyRendererFactory">
+         </property>
       </product>
    </extension>
 

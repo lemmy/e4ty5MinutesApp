@@ -10,7 +10,8 @@
       <programArgs>-clearPersistedState
 -console</programArgs>
       <vmArgs>-Dfelix.fileinstall.dir=/tmp/plugins
--Dfelix.fileinstall.poll=500</vmArgs>
+-Dfelix.fileinstall.poll=500
+-Dorg.eclipse.swt.browser.DefaultType=webkit</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 

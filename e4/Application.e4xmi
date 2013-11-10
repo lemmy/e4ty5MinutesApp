@@ -25,9 +25,11 @@
               <children xsi:type="basic:Part" xmi:id="_htuzsEoZEeOnCdI5wSJ4QQ" contributionURI="bundleclass://e4/e4.Styling" label="Styling"/>
             </children>
           </children>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_dQi2sEoZEeOnCdI5wSJ4QQ" toBeRendered="false" containerData="10000" selectedElement="_frUQAEoZEeOnCdI5wSJ4QQ" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_dQi2sEoZEeOnCdI5wSJ4QQ" containerData="10000" selectedElement="_frUQAEoZEeOnCdI5wSJ4QQ" horizontal="true">
             <children xsi:type="basic:PartStack" xmi:id="_frUQAEoZEeOnCdI5wSJ4QQ" elementId="PartStack@702eeef2" containerData="10000">
-              <children xsi:type="basic:Part" xmi:id="_hOO0QEoZEeOnCdI5wSJ4QQ" label="5"/>
+              <children xsi:type="basic:Part" xmi:id="_hOO0QEoZEeOnCdI5wSJ4QQ" label="Renderer">
+                <tags>https://github.com/kuppe/e4ty5MinutesApp/commits/master</tags>
+              </children>
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_gBpFUEoZEeOnCdI5wSJ4QQ" elementId="PartStack@6e6869e3" containerData="10000">
               <children xsi:type="basic:Part" xmi:id="_gXn8YEoZEeOnCdI5wSJ4QQ" label="6"/>
