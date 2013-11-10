@@ -426,7 +426,7 @@ Almost everything needed is part of the standard IDE download
 \end_layout
 
 \begin_layout Enumerate
-Close deaded error log
+Close dreaded error log
 \end_layout
 
 \end_deeper
@@ -441,6 +441,18 @@ Name it 'e4'
 
 \begin_layout Enumerate
 Do not generates 'sample content'
+\end_layout
+
+\begin_layout Enumerate
+(Hit 
+\begin_inset Quotes eld
+\end_inset
+
+add required bundles
+\begin_inset Quotes erd
+\end_inset
+
+ in .product dependencies (with current e4tools build))
 \end_layout
 
 \end_deeper
@@ -464,6 +476,11 @@ Add 'splash.bmp' into e4 project and add 'e4' plug-in to .product > splash
 Splash from existing splash.bmp to show who I am :-)
 \end_layout
 
+\begin_layout Enumerate
+(You are going to see the intro slide (splash) a couple of times throughout
+ the presentation (be happy that e4 starts up sooo fast)
+\end_layout
+
 \end_deeper
 \begin_layout Section
 Application model
@@ -473,17 +490,20 @@ Application model
 Static [A presentation usually needs slides]
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Subsubsection
 Add a part to host an outline
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 Explain application model generally
 \end_layout
 
 \begin_layout Enumerate
 Create just a part beneath window
+\end_layout
+
+\begin_layout Subsubsection
+Add 'e4.Outline.java' PartImpl to MPart model element
 \end_layout
 
 \begin_layout Enumerate
@@ -526,22 +546,17 @@ Select done items
 
 \end_deeper
 \end_deeper
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Subsubsection
 Tags on model elements
+\end_layout
+
+\begin_layout Enumerate
+Add tag to MTrimmedWindow model element to maxime the application
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Add 
-\begin_inset Quotes eld
-\end_inset
-
 shellMaximized
-\begin_inset Quotes erd
-\end_inset
-
- to (trimmed window)
 \end_layout
 
 \end_deeper
@@ -619,7 +634,7 @@ Toy with
  to show that delta changes can be applied
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Subsubsection
 Extend the application model at runtime, copy the current state from the
  liveeditor and paste it back into the application.e4xmi file in the IDE
 \end_layout
@@ -628,9 +643,8 @@ Extend the application model at runtime, copy the current state from the
 Build tile layout based on sashes
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Need six tiles?!
+Need ~six tiles
 \end_layout
 
 \begin_layout Itemize
@@ -645,7 +659,6 @@ slides
  to invisible
 \end_layout
 
-\end_deeper
 \begin_layout Subsubsection
 Modularity
 \end_layout
@@ -937,7 +950,7 @@ public class ImageLoader {
 
 \begin_layout Plain Layout
 
-		URL entry = FrameworkUtil.getBundle(getClass()).getEntry("di.png");
+		URL entry = FrameworkUtil.getBundle(getClass()).getEntry("images/di.png");
 \end_layout
 
 \begin_layout Plain Layout
@@ -999,6 +1012,85 @@ public void postConstruct(Composite parent, @Named("DI_ROXXS") Image image)
 \begin_layout Plain Layout
 
 }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Eventing [Show progress/current part of presentation]
+\end_layout
+
+\begin_layout Itemize
+PREREQUISITE: Parts have to correctly set focus (no impl of parts means
+ one has to click on headers)
+\end_layout
+
+\begin_layout Itemize
+Use events send out on MPart activation to switch the button state in the
+ Outline part
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+private final Map<MPart, Button> buttons = new HashMap<>(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+@Inject
+\end_layout
+
+\begin_layout Plain Layout
+
+@Optional
+\end_layout
+
+\begin_layout Plain Layout
+
+private void updateButtonState(@UIEventTopic(UIEvents.UILifeCycle.ACTIVATE)
+ org.osgi.service.event.Event o) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	Object property = o.getProperty(UIEvents.EventTags.ELEMENT);
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (buttons.containsKey(property)) {
+\end_layout
+
+\begin_layout Plain Layout
+
+			Button button = buttons.get(property);
+\end_layout
+
+\begin_layout Plain Layout
+
+			button.setSelection(!button.getSelection()); // Never flip but set to true
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+} 
 \end_layout
 
 \end_inset
@@ -1392,85 +1484,6 @@ Use IChatMessage bot running on build.vogella.com
 \end_layout
 
 \begin_layout Section
-Eventing [Show progress/current part of presentation]
-\end_layout
-
-\begin_layout Itemize
-PREREQUISITE: Parts have to correctly set focus (no impl of parts means
- one has to click on headers)
-\end_layout
-
-\begin_layout Itemize
-Use events send out on MPart activation to switch the button state in the
- Outline part
-\end_layout
-
-\begin_layout Itemize
-\begin_inset listings
-inline false
-status open
-
-\begin_layout Plain Layout
-
-private final Map<MPart, Button> buttons = new HashMap<>(); 
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-
-@Inject
-\end_layout
-
-\begin_layout Plain Layout
-
-@Optional
-\end_layout
-
-\begin_layout Plain Layout
-
-private void updateButtonState(@UIEventTopic(UIEvents.UILifeCycle.ACTIVATE)
- org.osgi.service.event.Event o) {
-\end_layout
-
-\begin_layout Plain Layout
-
-	Object property = o.getProperty(UIEvents.EventTags.ELEMENT);
-\end_layout
-
-\begin_layout Plain Layout
-
-	if (buttons.containsKey(property)) {
-\end_layout
-
-\begin_layout Plain Layout
-
-			Button button = buttons.get(property);
-\end_layout
-
-\begin_layout Plain Layout
-
-			button.setSelection(!button.getSelection()); // Never flip but set to true
-\end_layout
-
-\begin_layout Plain Layout
-
-	}
-\end_layout
-
-\begin_layout Plain Layout
-
-} 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
 Styling & Renderer
 \end_layout
 
@@ -1708,6 +1721,10 @@ Use URL as Tag and try/catch to create URL from it inside Part renderer
 
 \begin_layout Itemize
 http://www.eclipse.org/forums/
+\end_layout
+
+\begin_layout Itemize
+https://github.com/kuppe/e4ty5MinutesApp/commits/master
 \end_layout
 
 \end_deeper
@@ -1997,7 +2014,7 @@ public class MyRendererFactory extends WorkbenchRendererFactory {
 
 \begin_layout Plain Layout
 
-				if (tag.startsWith("http://")) {
+				if (tag.startsWith("http")) {
 \end_layout
 
 \begin_layout Plain Layout
@@ -2167,6 +2184,14 @@ unner/releases/10.0.4esr/runtimes/ and extract to /tmp
 \end_layout
 
 \begin_layout Subsubsection
+Force webkit
+\end_layout
+
+\begin_layout Standard
+-Dorg.eclipse.swt.browser.DefaultType=webkit
+\end_layout
+
+\begin_layout Subsubsection
 Vogella trainings
 \end_layout
 
@@ -2216,7 +2241,7 @@ status open
 
 \begin_layout Plain Layout
 
-package e4.geomap;
+package e4;
 \end_layout
 
 \begin_layout Plain Layout
@@ -2234,21 +2259,22 @@ import javax.annotation.PostConstruct;
 
 \begin_layout Plain Layout
 
-import org.eclipse.nebula.widgets.geomap.GeoMapBrowser;
+import org.eclipse.nebula.widgets.geomap.GeoMap;
 \end_layout
 
 \begin_layout Plain Layout
 
+import org.eclipse.nebula.widgets.geomap.PointD;
 \end_layout
 
 \begin_layout Plain Layout
 
-import org.eclipse.swt.SWT; 
+import org.eclipse.swt.SWT;
 \end_layout
 
 \begin_layout Plain Layout
 
-import org.eclipse.swt.layout.FillLayout; 
+import org.eclipse.swt.layout.FillLayout;
 \end_layout
 
 \begin_layout Plain Layout
@@ -2262,7 +2288,16 @@ import org.eclipse.swt.widgets.Composite;
 
 \begin_layout Plain Layout
 
-public class MyGeoMap {
+public class Help {
+\end_layout
+
+\begin_layout Plain Layout
+
+	private static final PointD HAMBURG = new PointD(9.7430, 53.5972);
+\end_layout
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -2277,12 +2312,26 @@ public class MyGeoMap {
 
 \begin_layout Plain Layout
 
-		parent.setLayout(new FillLayout()); 		
+		parent.setLayout(new FillLayout()); 
 \end_layout
 
 \begin_layout Plain Layout
 
-		new GeoMapBrowser(parent, SWT.NONE); 
+\end_layout
+
+\begin_layout Plain Layout
+
+		GeoMap geoMap = new GeoMap(parent, SWT.NONE);
+\end_layout
+
+\begin_layout Plain Layout
+
+        geoMap.setCenterPosition(geoMap.computePosition(HAMBURG));
+\end_layout
+
+\begin_layout Plain Layout
+
+        geoMap.redraw();
 \end_layout
 
 \begin_layout Plain Layout
