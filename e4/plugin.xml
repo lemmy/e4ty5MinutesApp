@@ -11,6 +11,10 @@
                name="applicationCSS"
                value="platform:/plugin/e4/css/default.css">
          </property>
+         <property
+               name="appName"
+               value="e4">
+         </property>
       </product>
    </extension>
 

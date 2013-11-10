@@ -13,9 +13,11 @@
 
    <windowImages/>
 
+   <splash
+      location="e4" />
    <plugins>
-      <plugin id="e4"/>
       <plugin id="com.ibm.icu"/>
+      <plugin id="e4"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
       <plugin id="javax.xml"/>
