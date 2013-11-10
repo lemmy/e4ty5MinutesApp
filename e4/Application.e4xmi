@@ -1,18 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_dbZYoEoVEeO6U74ueab81g" elementId="org.eclipse.e4.ide.application" bindingContexts="_dbZYqUoVEeO6U74ueab81g">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_dbZYoUoVEeO6U74ueab81g" label="e4" width="500" height="400">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_TD6qoUoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ide.application" contributorURI="platform:/plugin/e4" selectedElement="_TD6qokoZEeOnCdI5wSJ4QQ" bindingContexts="_TD7RsUoZEeOnCdI5wSJ4QQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_TD6qokoZEeOnCdI5wSJ4QQ" contributorURI="platform:/plugin/e4" selectedElement="_UzOFEEoZEeOnCdI5wSJ4QQ" label="e4" width="500" height="400">
     <tags>shellMaximized</tags>
-    <children xsi:type="basic:Part" xmi:id="_FQooUEoWEeO6U74ueab81g" elementId="e4.part.0" contributionURI="bundleclass://e4/e4.Outline" label="Outlook Slide"/>
+    <tags>topLevel</tags>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_UzOFEEoZEeOnCdI5wSJ4QQ" selectedElement="_VO5UcEoZEeOnCdI5wSJ4QQ">
+      <children xsi:type="advanced:Perspective" xmi:id="_VO5UcEoZEeOnCdI5wSJ4QQ">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_cAaw8EosEeOfcb0wD83hkg" elementId="e4.partsashcontainer.0">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_WDeMAEoZEeOnCdI5wSJ4QQ" containerData="10000" selectedElement="_W4ehYEoZEeOnCdI5wSJ4QQ" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_W4ehYEoZEeOnCdI5wSJ4QQ" elementId="PartStack@689961d1" containerData="10000" selectedElement="_TD7RsEoZEeOnCdI5wSJ4QQ">
+              <tags>active</tags>
+              <children xsi:type="basic:Part" xmi:id="_TD7RsEoZEeOnCdI5wSJ4QQ" elementId="e4.part.0" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://e4/e4.Outline" label="Outlook Slide">
+                <tags>active</tags>
+              </children>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_XVyIcEoZEeOnCdI5wSJ4QQ" elementId="PartStack@26b0e731" containerData="10000" selectedElement="_YvwzIEoZEeOnCdI5wSJ4QQ">
+              <children xsi:type="basic:Part" xmi:id="_YvwzIEoZEeOnCdI5wSJ4QQ" label="Second part"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_cvA28EoZEeOnCdI5wSJ4QQ" containerData="10000" selectedElement="_e9bPQEoZEeOnCdI5wSJ4QQ" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_e9bPQEoZEeOnCdI5wSJ4QQ" elementId="PartStack@4086c8b4" containerData="10000">
+              <children xsi:type="basic:Part" xmi:id="_iQs94EoZEeOnCdI5wSJ4QQ" label="3"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_fX3vkEoZEeOnCdI5wSJ4QQ" elementId="PartStack@131e0544" containerData="10000">
+              <children xsi:type="basic:Part" xmi:id="_htuzsEoZEeOnCdI5wSJ4QQ" label="4"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_dQi2sEoZEeOnCdI5wSJ4QQ" toBeRendered="false" containerData="10000" selectedElement="_frUQAEoZEeOnCdI5wSJ4QQ" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_frUQAEoZEeOnCdI5wSJ4QQ" elementId="PartStack@702eeef2" containerData="10000">
+              <children xsi:type="basic:Part" xmi:id="_hOO0QEoZEeOnCdI5wSJ4QQ" label="5"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_gBpFUEoZEeOnCdI5wSJ4QQ" elementId="PartStack@6e6869e3" containerData="10000">
+              <children xsi:type="basic:Part" xmi:id="_gXn8YEoZEeOnCdI5wSJ4QQ" label="6"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
   </children>
-  <rootContext xmi:id="_dbZYqUoVEeO6U74ueab81g" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
-    <children xmi:id="_dbZYqkoVEeO6U74ueab81g" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
-    <children xmi:id="_dbZYq0oVEeO6U74ueab81g" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  <handlers xmi:id="_TEBYUEoZEeOnCdI5wSJ4QQ" elementId="e4.tooling.livemodel.handler" contributionURI="bundleclass://org.eclipse.e4.tools.emf.liveeditor/org.eclipse.e4.tools.emf.liveeditor.OpenLiveDialogHandler" command="_TEAxQEoZEeOnCdI5wSJ4QQ"/>
+  <bindingTables xmi:id="_TEB_YEoZEeOnCdI5wSJ4QQ" elementId="e4.tooling.livemodel.bindingTable" bindingContext="_TD7RsUoZEeOnCdI5wSJ4QQ">
+    <bindings xmi:id="_TEB_YUoZEeOnCdI5wSJ4QQ" elementId="e4.tooling.livemodel.binding" keySequence="ALT+SHIFT+F9" command="_TEAxQEoZEeOnCdI5wSJ4QQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_TD7RsUoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" contributorURI="platform:/plugin/e4" name="In Dialog and Windows">
+    <children xmi:id="_TD7RskoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.ui.contexts.window" contributorURI="platform:/plugin/e4" name="In Windows"/>
+    <children xmi:id="_TD7Rs0oZEeOnCdI5wSJ4QQ" elementId="org.eclipse.ui.contexts.dialog" contributorURI="platform:/plugin/e4" name="In Dialogs"/>
   </rootContext>
-  <addons xmi:id="_dbZYokoVEeO6U74ueab81g" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
-  <addons xmi:id="_dbZYo0oVEeO6U74ueab81g" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
-  <addons xmi:id="_dbZYpEoVEeO6U74ueab81g" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
-  <addons xmi:id="_dbZYpUoVEeO6U74ueab81g" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
-  <addons xmi:id="_dbZYpkoVEeO6U74ueab81g" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
-  <addons xmi:id="_dbZYp0oVEeO6U74ueab81g" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
-  <addons xmi:id="_dbZYqEoVEeO6U74ueab81g" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <descriptors xmi:id="_TEDNgEoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.tools.emf.liveeditor.view" contributorURI="bundleclass://org.eclipse.e4.tools.emf.liveeditor" label="Live Application Model" iconURI="platform:/plugin/org.eclipse.e4.tools.emf.liveeditor/icons/full/obj16/application_lightning.png" category="org.eclipse.e4.secondaryDataStack" contributionURI="bundleclass://org.eclipse.e4.tools.emf.liveeditor/org.eclipse.e4.tools.emf.liveeditor.LivePartDelegator">
+    <tags>View</tags>
+    <tags>categoryTag:General</tags>
+  </descriptors>
+  <commands xmi:id="_TEAxQEoZEeOnCdI5wSJ4QQ" elementId="e4.tooling.livemodel" commandName="Show running app model" description="Show the running application model"/>
+  <addons xmi:id="_TD7RtEoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_TD7RtUoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_TD7RtkoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_TD7Rt0oZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_TD7RuEoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_TD7RuUoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_TD7RukoZEeOnCdI5wSJ4QQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributorURI="platform:/plugin/e4" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
 </application:Application>
