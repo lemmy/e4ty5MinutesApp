@@ -14,10 +14,10 @@ import org.eclipse.swt.widgets.Label;
 public class Outline {
 	
 	@PostConstruct
-	public void postConstruct(Composite parent) {
+	public void postConstruct(Composite parent, Speaker speaker) {
 		
 		Group grpOutline = new Group(parent, SWT.NONE);
-		grpOutline.setText("Outline");
+		grpOutline.setText("Outline for speaker: " + speaker.getName());
 		grpOutline.setLayout(new FillLayout(SWT.VERTICAL));
 		
 		Button btnFirstPart = new Button(grpOutline, SWT.CHECK);
