@@ -27,8 +27,8 @@
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
-\use_geometry false
+\papersize a4paper
+\use_geometry true
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -43,6 +43,9 @@
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1cm
+\topmargin 1cm
+\bottommargin 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -399,8 +402,8 @@ The Eclipse Rich Client Platform (RCP) in its fourth incantation/incarnation
 \begin_inset Newline newline
 \end_inset
 
-In this talk, Markus will proof how fast and efficient an Eclipse RCP applicatio
-n can be build from the grounds up.
+In this talk, Markus will demonstrate how fast and efficient an Eclipse
+ RCP application can be build from the grounds up.
  He starts with just a bare window and explores all significant aspects*
  of the platform on his path to the final application.
 \begin_inset Newline newline
@@ -678,8 +681,12 @@ org.eclipse.e4.ui.workbench.addons.swt
 \end_layout
 
 \begin_layout Itemize
-No need to add a model addon explicitly, because model processor 'org.eclipse.e4.ui.
-workbench.addons.swt.MinMaxProcessor' does it programmatically
+No need to add a model addon explicitly,
+\end_layout
+
+\begin_layout Itemize
+because model processor 'org.eclipse.e4.ui.workbench.addons.swt.MinMaxProcessor'
+ does it programmatically
 \end_layout
 
 \end_deeper
@@ -702,8 +709,13 @@ Add model addon to application model
 
 \begin_deeper
 \begin_layout Itemize
-bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.dnda
-ddon.DnDAddon
+bundleclass://org.eclipse.e4.ui.workbench.addons.swt/ 
+\backslash
+
+\end_layout
+
+\begin_layout Itemize
+org.eclipse.e4.ui.workbench.addons.dndaddon.DnDAddon
 \end_layout
 
 \end_deeper
@@ -760,14 +772,12 @@ Inject EModelService and MApplication into Outline to find all MParts to
  build the outline dynamically
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 Use unchecked buttons for each of the items
-\end_layout
-
-\begin_layout Itemize
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -887,6 +897,7 @@ Non-typed based keys aka @Named(
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -926,6 +937,11 @@ import org.eclipse.swt.graphics.Image;
 
 \begin_layout Plain Layout
 
+import org.osgi.framework.Bundle;
+\end_layout
+
+\begin_layout Plain Layout
+
 import org.osgi.framework.FrameworkUtil;
 \end_layout
 
@@ -950,7 +966,12 @@ public class ImageLoader {
 
 \begin_layout Plain Layout
 
-		URL entry = FrameworkUtil.getBundle(getClass()).getEntry("images/di.png");
+	  final Bundle bundle = FrameworkUtil.getBundle(getClass());
+\end_layout
+
+\begin_layout Plain Layout
+
+		URL entry = bundle.getEntry("images/di.png");
 \end_layout
 
 \begin_layout Plain Layout
@@ -985,6 +1006,7 @@ public class ImageLoader {
 
 \begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -995,8 +1017,12 @@ status open
 
 \begin_layout Plain Layout
 
-public void postConstruct(Composite parent, @Named("DI_ROXXS") Image image)
- {
+public void postConstruct(Composite parent, 
+\end_layout
+
+\begin_layout Plain Layout
+
+	@Named("DI_ROXXS") Image image) {
 \end_layout
 
 \begin_layout Plain Layout
@@ -1033,8 +1059,9 @@ Use events send out on MPart activation to switch the button state in the
  Outline part
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -1059,8 +1086,13 @@ private final Map<MPart, Button> buttons = new HashMap<>();
 
 \begin_layout Plain Layout
 
-private void updateButtonState(@UIEventTopic(UIEvents.UILifeCycle.ACTIVATE)
- org.osgi.service.event.Event o) {
+private void updateButtonState(
+\end_layout
+
+\begin_layout Plain Layout
+
+	@UIEventTopic(UIEvents.UILifeCycle.ACTIVATE) org.osgi.service.event.Event o)
+ {
 \end_layout
 
 \begin_layout Plain Layout
@@ -1075,12 +1107,17 @@ private void updateButtonState(@UIEventTopic(UIEvents.UILifeCycle.ACTIVATE)
 
 \begin_layout Plain Layout
 
-			Button button = buttons.get(property);
+		Button button = buttons.get(property);
 \end_layout
 
 \begin_layout Plain Layout
 
-			button.setSelection(!button.getSelection()); // Never flip but set to true
+		 // Never flip but set to true
+\end_layout
+
+\begin_layout Plain Layout
+
+		button.setSelection(!button.getSelection());
 \end_layout
 
 \begin_layout Plain Layout
@@ -1145,7 +1182,7 @@ org.apache.felix.gogo.shell
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset listings
 inline false
 status open
@@ -1239,14 +1276,20 @@ refresh $bundleId
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
 \begin_layout Plain Layout
 
 package content.service;
+\end_layout
+
+\begin_layout Plain Layout
+
+import org.osgi.framework.Bundle;
 \end_layout
 
 \begin_layout Plain Layout
@@ -1271,17 +1314,17 @@ public class MyContentServiceImpl implements ContentService {
 
 \begin_layout Plain Layout
 
-   public String getTitle() { 		
+   public String getTitle() {
 \end_layout
 
 \begin_layout Plain Layout
 
-      String version = FrameworkUtil.getBundle(getClass()).getHeaders()
+	  final Bundle bundle = FrameworkUtil.getBundle(getClass());
 \end_layout
 
 \begin_layout Plain Layout
 
-				.get(Constants.BUNDLE_VERSION); 		
+      String version = b.getHeaders().get(Constants.BUNDLE_VERSION); 		
 \end_layout
 
 \begin_layout Plain Layout
@@ -1304,8 +1347,9 @@ public class MyContentServiceImpl implements ContentService {
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -1456,19 +1500,6 @@ Refactor ContentService into own 'api' bundle
 Move class, export its package and add to .product
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO!!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \end_deeper
 \begin_layout Subsection
 Services Remoting [Steal some (remote) content and embed it into my presentation
@@ -1559,8 +1590,10 @@ Add SWT to bundle dependencies
 Copy css*.png to images/ folder of opal bundle
 \end_layout
 
-\begin_layout Itemize
+\end_deeper
+\begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -1695,7 +1728,6 @@ public class Styling {
 
 \end_layout
 
-\end_deeper
 \begin_layout Subsection
 Renderer [Where to get further help and find e4 getting started documentation?]
 \end_layout
@@ -1735,6 +1767,7 @@ Implement MyRendererFactory
 
 \begin_layout Itemize
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -1777,8 +1810,9 @@ org.eclipse.e4.ui.workbench.swt
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -1931,8 +1965,9 @@ public class BrowserRenderer extends SWTPartRenderer {
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
@@ -2003,68 +2038,72 @@ public class MyRendererFactory extends WorkbenchRendererFactory {
 
 \begin_layout Plain Layout
 
-			MPart part = (MPart) uiElement;
+		 MPart part = (MPart) uiElement;
 \end_layout
 
 \begin_layout Plain Layout
 
-			for (String tag : part.getTags()) { // could use persistent state instead
- of tag to identify part
+		 // could use persistent state instead of tag to identify part
 \end_layout
 
 \begin_layout Plain Layout
 
-				if (tag.startsWith("http")) {
+		 for (String tag : part.getTags()) {
 \end_layout
 
 \begin_layout Plain Layout
 
-					try {
+			if (tag.startsWith("http")) {
 \end_layout
 
 \begin_layout Plain Layout
 
-						new URL(tag);
+			 try {
 \end_layout
 
 \begin_layout Plain Layout
 
-						BrowserRenderer br = new BrowserRenderer();
+			  new URL(tag);
 \end_layout
 
 \begin_layout Plain Layout
 
-						initRenderer(br);
+			  BrowserRenderer br = new BrowserRenderer();
 \end_layout
 
 \begin_layout Plain Layout
 
-						return br;
+			  initRenderer(br);
 \end_layout
 
 \begin_layout Plain Layout
 
-					} catch (MalformedURLException doesNotHappen) {
+			  return br;
 \end_layout
 
 \begin_layout Plain Layout
 
-						doesNotHappen.printStackTrace();
+			 } catch (MalformedURLException doesNotHappen) {
 \end_layout
 
 \begin_layout Plain Layout
 
-					}
-\end_layout
-
-\begin_layout Plain Layout
-
-				}
+				doesNotHappen.printStackTrace();
 \end_layout
 
 \begin_layout Plain Layout
 
 			}
+\end_layout
+
+\begin_layout Plain Layout
+
+		 }
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2234,8 +2273,9 @@ Shows installation of custom widgets too
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
+\begin_layout Standard
 \begin_inset listings
+lstparams "breaklines=true"
 inline false
 status open
 
